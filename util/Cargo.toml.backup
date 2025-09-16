@@ -1,11 +1,11 @@
 [package]
-name = "cs_mwc_util"
+name = "mwc_util"
 version = "5.3.9"
 authors = ["Mwc Developers <info@mwc.mw>"]
 description = "Simple, private and scalable cryptocurrency implementation based on the MimbleWimble chain format."
 license = "Apache-2.0"
 repository = "https://github.com/mwcproject/mwc-node"
-keywords = [ "crypto", "cs_mwc", "mimblewimble" ]
+keywords = [ "crypto", "mwc", "mimblewimble" ]
 workspace = ".."
 edition = "2018"
 
@@ -29,4 +29,4 @@ parking_lot = "0.12"
 zeroize = { version = "1.1", features =["zeroize_derive"] }
 thiserror = "1"
 
-cs_mwc_secp256k1zkp = { version = "0.7.16", git = "https://github.com/cypherstack/rust-secp256k1-zkp", branch = "mirror", features = ["bullet-proof-sizing"] }
+mwc_secp256k1zkp = { git = "https://github.com/mwcproject/rust-secp256k1-zkp", version= "0.7.16", tag = "0.7.16", features = ["bullet-proof-sizing"] }

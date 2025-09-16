@@ -1,11 +1,11 @@
 [package]
-name = "cs_mwc_p2p"
+name = "mwc_p2p"
 version = "5.3.9"
 authors = ["Mwc Developers <info@mwc.mw>"]
 description = "Chain implementation for mwc, a simple, private and scalable cryptocurrency implementation based on the MimbleWimble chain format."
 license = "Apache-2.0"
 repository = "https://github.com/mwcproject/mwc-node"
-keywords = [ "crypto", "cs_mwc", "mimblewimble" ]
+keywords = [ "crypto", "mwc", "mimblewimble" ]
 workspace = ".."
 edition = "2018"
 
@@ -29,7 +29,7 @@ futures = "0.3"
 #libp2p-tokio-socks5 = { path = "../../rust-libp2p-tokio-socks5" }
 #libp2p = { path = "../../rust-libp2p", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"] }
 #mwc-libp2p-tokio-socks5 = { git = "https://github.com/mwcproject/rust-libp2p-tokio-socks5", version = "0.7.2", branch = "master", optional = true }
-#mwc-cs_mwc-libp2p = { version = "0.35.3", git = "https://github.com/cypherstack/rust-libp2p", branch = "master", version="0.35.3", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"], optional = true}
+#mwc-libp2p = { git = "https://github.com/mwcproject/rust-libp2p", branch = "master", version="0.35.3", default-features = false, features = [ "noise", "yamux", "mplex", "dns", "tcp-tokio", "ping", "gossipsub"], optional = true}
 lazy_static = "1"
 async-std = "1.9"
 tokio = {version = "1", features = ["full"] }
@@ -38,13 +38,13 @@ serde_json = "1"
 bytes = "0.5"
 crossbeam = "0.8"
 
-mwc_core = { package = "cs_mwc_core", path = "../core", version = "5.3.9" }
-mwc_store = { package = "cs_mwc_store", path = "../store", version = "5.3.9" }
-mwc_util = { package = "cs_mwc_util", path = "../util", version = "5.3.9" }
-mwc_chain = { package = "cs_mwc_chain", path = "../chain", version = "5.3.9" }
+mwc_core = { path = "../core", version = "5.3.9" }
+mwc_store = { path = "../store", version = "5.3.9" }
+mwc_util = { path = "../util", version = "5.3.9" }
+mwc_chain = { path = "../chain", version = "5.3.9" }
 
 [dev-dependencies]
-mwc_pool = { package = "cs_mwc_pool", path = "../pool", version = "5.3.9" }
+mwc_pool = { path = "../pool", version = "5.3.9" }
 
 [features]
 # libp2p disabled by default

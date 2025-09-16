@@ -1,11 +1,11 @@
 [package]
-name = "cs_mwc"
+name = "mwc"
 version = "5.3.9"
 authors = ["Mwc Developers <info@mwc.mw>"]
 description = "Simple, private and scalable cryptocurrency implementation based on the MimbleWimble chain format."
 license = "Apache-2.0"
 repository = "https://github.com/mwcproject/mwc-node"
-keywords = [ "crypto", "cs_mwc", "mimblewimble" ]
+keywords = [ "crypto", "mwc", "mimblewimble" ]
 readme = "README.md"
 exclude = ["**/*.mwc", "**/*.mwc"]
 build = "src/build/build.rs"
@@ -16,7 +16,7 @@ members = ["api", "chain", "config", "core", "keychain", "p2p", "servers", "stor
 exclude = ["etc/gen_gen"]
 
 [[bin]]
-name = "cs_mwc"
+name = "mwc"
 path = "src/bin/mwc.rs"
 
 [dependencies]
@@ -33,14 +33,14 @@ log = "0.4"
 term = "0.6"
 thiserror = "1"
 
-mwc_api = { package = "cs_mwc_api", path = "./api", version = "5.3.9" }
-mwc_config = { package = "cs_mwc_config", path = "./config", version = "5.3.9" }
-mwc_chain = { package = "cs_mwc_chain", path = "./chain", version = "5.3.9" }
-mwc_core = { package = "cs_mwc_core", path = "./core", version = "5.3.9" }
-mwc_keychain = { package = "cs_mwc_keychain", path = "./keychain", version = "5.3.9" }
-mwc_p2p = { package = "cs_mwc_p2p", path = "./p2p", version = "5.3.9" }
-mwc_servers = { package = "cs_mwc_servers", path = "./servers", version = "5.3.9" }
-mwc_util = { package = "cs_mwc_util", path = "./util", version = "5.3.9" }
+mwc_api = { path = "./api", version = "5.3.9" }
+mwc_config = { path = "./config", version = "5.3.9" }
+mwc_chain = { path = "./chain", version = "5.3.9" }
+mwc_core = { path = "./core", version = "5.3.9" }
+mwc_keychain = { path = "./keychain", version = "5.3.9" }
+mwc_p2p = { path = "./p2p", version = "5.3.9" }
+mwc_servers = { path = "./servers", version = "5.3.9" }
+mwc_util = { path = "./util", version = "5.3.9" }
 
 [dependencies.cursive]
 version = "0.21"
@@ -51,8 +51,8 @@ features = ["pancurses-backend"]
 built = { version = "0.8", features = ["git2"]}
 
 [dev-dependencies]
-mwc_chain = { package = "cs_mwc_chain", path = "./chain", version = "5.3.9" }
-mwc_store = { package = "cs_mwc_store", path = "./store", version = "5.3.9" }
+mwc_chain = { path = "./chain", version = "5.3.9" }
+mwc_store = { path = "./store", version = "5.3.9" }
 
 [profile.release-with-debug]
 inherits = "release"

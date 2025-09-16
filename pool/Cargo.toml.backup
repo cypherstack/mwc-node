@@ -1,11 +1,11 @@
 [package]
-name = "cs_mwc_pool"
+name = "mwc_pool"
 version = "5.3.9"
 authors = ["Mwc Developers <info@mwc.mw>"]
 description = "Chain implementation for mwc, a simple, private and scalable cryptocurrency implementation based on the MimbleWimble chain format."
 license = "Apache-2.0"
 repository = "https://github.com/mwcproject/mwc-node"
-keywords = [ "crypto", "cs_mwc", "mimblewimble" ]
+keywords = [ "crypto", "mwc", "mimblewimble" ]
 workspace = '..'
 edition = "2018"
 
@@ -19,9 +19,9 @@ lru = "0.12"
 log = "0.4"
 chrono = "0.4.11"
 
-mwc_core = { package = "cs_mwc_core", path = "../core", version = "5.3.9" }
-mwc_keychain = { package = "cs_mwc_keychain", path = "../keychain", version = "5.3.9" }
-mwc_util = { package = "cs_mwc_util", path = "../util", version = "5.3.9" }
+mwc_core = { path = "../core", version = "5.3.9" }
+mwc_keychain = { path = "../keychain", version = "5.3.9" }
+mwc_util = { path = "../util", version = "5.3.9" }
 
 [dev-dependencies]
-mwc_chain = { package = "cs_mwc_chain", path = "../chain", version = "5.3.9" }
+mwc_chain = { path = "../chain", version = "5.3.9" }

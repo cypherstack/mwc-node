@@ -1,11 +1,11 @@
 [package]
-name = "cs_mwc_servers"
+name = "mwc_servers"
 version = "5.3.9"
 authors = ["Mwc Developers <info@mwc.mw>"]
 description = "Simple, private and scalable cryptocurrency implementation based on the MimbleWimble chain format."
 license = "Apache-2.0"
 repository = "https://github.com/mwcproject/mwc-node"
-keywords = [ "crypto", "cs_mwc", "mimblewimble" ]
+keywords = [ "crypto", "mwc", "mimblewimble" ]
 workspace = ".."
 edition = "2018"
 
@@ -34,14 +34,14 @@ dirs = "1.0.3"
 timer = "0.2"
 atomic_float = "1.0"
 
-mwc_api = { package = "cs_mwc_api", path = "../api", version = "5.3.9" }
-mwc_chain = { package = "cs_mwc_chain", path = "../chain", version = "5.3.9" }
-mwc_core = { package = "cs_mwc_core", path = "../core", version = "5.3.9" }
-mwc_keychain = { package = "cs_mwc_keychain", path = "../keychain", version = "5.3.9" }
-mwc_p2p = { package = "cs_mwc_p2p", path = "../p2p", version = "5.3.9" }
-mwc_pool = { package = "cs_mwc_pool", path = "../pool", version = "5.3.9" }
-mwc_store = { package = "cs_mwc_store", path = "../store", version = "5.3.9" }
-mwc_util = { package = "cs_mwc_util", path = "../util", version = "5.3.9" }
+mwc_api = { path = "../api", version = "5.3.9" }
+mwc_chain = { path = "../chain", version = "5.3.9" }
+mwc_core = { path = "../core", version = "5.3.9" }
+mwc_keychain = { path = "../keychain", version = "5.3.9" }
+mwc_p2p = { path = "../p2p", version = "5.3.9" }
+mwc_pool = { path = "../pool", version = "5.3.9" }
+mwc_store = { path = "../store", version = "5.3.9" }
+mwc_util = { path = "../util", version = "5.3.9" }
 
 # NOTE. We can't have hyper-rustls the same version for Android and non android. because if how rust builds dependency.
 # Android must have v0.20+

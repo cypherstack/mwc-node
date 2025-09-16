@@ -1,11 +1,11 @@
 [package]
-name = "cs_mwc_config"
+name = "mwc_config"
 version = "5.3.9"
 authors = ["Mwc Developers <info@mwc.mw>"]
 description = "Configuration for mwc, a simple, private and scalable cryptocurrency implementation based on the MimbleWimble chain format."
 license = "Apache-2.0"
 repository = "https://github.com/mwcproject/mwc-node"
-keywords = [ "crypto", "cs_mwc", "mimblewimble" ]
+keywords = [ "crypto", "mwc", "mimblewimble" ]
 workspace = ".."
 edition = "2018"
 
@@ -17,10 +17,10 @@ toml = "0.5"
 dirs = "2.0"
 thiserror = "1"
 
-mwc_core = { package = "cs_mwc_core", path = "../core", version = "5.3.9" }
-mwc_servers = { package = "cs_mwc_servers", path = "../servers", version = "5.3.9" }
-mwc_p2p = { package = "cs_mwc_p2p", path = "../p2p", version = "5.3.9" }
-mwc_util = { package = "cs_mwc_util", path = "../util", version = "5.3.9" }
+mwc_core = { path = "../core", version = "5.3.9" }
+mwc_servers = { path = "../servers", version = "5.3.9" }
+mwc_p2p = { path = "../p2p", version = "5.3.9" }
+mwc_util = { path = "../util", version = "5.3.9" }
 
 [dev-dependencies]
 pretty_assertions = "0.6.1"
