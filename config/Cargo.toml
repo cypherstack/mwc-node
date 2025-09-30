@@ -17,10 +17,10 @@ toml = "0.5"
 dirs = "2.0"
 thiserror = "1"
 
-mwc_core = { path = "../core", version = "5.3.9" }
-mwc_servers = { path = "../servers", version = "5.3.9" }
-mwc_p2p = { path = "../p2p", version = "5.3.9" }
-mwc_util = { path = "../util", version = "5.3.9" }
+grin_core = { path = "../core", version = "5.3.9" }
+grin_servers = { path = "../servers", version = "5.3.9" }
+grin_p2p = { path = "../p2p", version = "5.3.9" }
+grin_util = { path = "../util", version = "5.3.9" }
 
 [dev-dependencies]
 pretty_assertions = "0.6.1"
