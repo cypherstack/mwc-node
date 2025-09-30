@@ -16,9 +16,9 @@
 //! the peer-to-peer server, the blockchain and the transaction pool) and acts
 //! as a facade.
 
-use grin_p2p::core::Multiaddr;
-use grin_p2p::Socks5TokioTcpConfig;
-use grin_p2p::{
+use libp2p::core::Multiaddr;
+use libp2p::Socks5TokioTcpConfig;
+use libp2p::{
 	core::{
 		muxing::StreamMuxerBox,
 		upgrade::{SelectUpgrade, Version},
@@ -33,10 +33,10 @@ use grin_p2p::{
 	PeerId, Swarm, Transport,
 };
 
-use grin_p2p::gossipsub::{
+use libp2p::gossipsub::{
 	self, GossipsubEvent, IdentTopic as Topic, MessageAuthenticity, MessageId, ValidationMode,
 };
-use grin_p2p::gossipsub::{Gossipsub, MessageAcceptance, TopicHash};
+use libp2p::gossipsub::{Gossipsub, MessageAcceptance, TopicHash};
 
 use crate::grin_core::global;
 use crate::types::Error;
