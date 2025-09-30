@@ -23,12 +23,12 @@ use rand::prelude::*;
 
 use crate::chain;
 use crate::chain::txhashset::BitmapChunk;
-use crate::grin_core::core;
-use crate::grin_core::core::hash::{Hash, Hashed};
-use crate::grin_core::core::{OutputIdentifier, Segment, SegmentIdentifier, TxKernel};
-use crate::grin_core::global;
-use crate::grin_core::pow::Difficulty;
 use crate::msg::PeerAddrs;
+use crate::mwc_core::core;
+use crate::mwc_core::core::hash::{Hash, Hashed};
+use crate::mwc_core::core::{OutputIdentifier, Segment, SegmentIdentifier, TxKernel};
+use crate::mwc_core::global;
+use crate::mwc_core::pow::Difficulty;
 use crate::peer::Peer;
 use crate::store::{PeerData, PeerStore, State};
 use crate::types::{
@@ -38,8 +38,8 @@ use crate::types::{
 use crate::util::secp::pedersen::RangeProof;
 use chrono::prelude::*;
 use chrono::Duration;
-use grin_chain::txhashset::Segmenter;
-use grin_util::StopState;
+use mwc_chain::txhashset::Segmenter;
+use mwc_util::StopState;
 
 const LOCK_TIMEOUT: std::time::Duration = std::time::Duration::from_secs(2);
 
