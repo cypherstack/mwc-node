@@ -23,8 +23,8 @@ use self::core::core::hash::Hash;
 use self::core::core::transaction::{self, Transaction};
 use self::core::core::{BlockHeader, BlockSums, Inputs, OutputIdentifier};
 use chrono::prelude::*;
-use mwc_core as core;
-use mwc_keychain as keychain;
+use grin_core as core;
+use grin_keychain as keychain;
 
 /// Dandelion "epoch" length.
 const DANDELION_EPOCH_SECS: u16 = 600;

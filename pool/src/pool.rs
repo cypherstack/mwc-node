@@ -23,8 +23,8 @@ use self::core::core::{
 	Block, BlockHeader, BlockSums, Committed, OutputIdentifier, Transaction, TxKernel, Weighting,
 };
 use crate::types::{BlockChain, PoolEntry, PoolError};
-use mwc_core as core;
-use mwc_util::secp::Secp256k1;
+use grin_core as core;
+use grin_util::secp::Secp256k1;
 use std::cmp::Reverse;
 use std::collections::{HashMap, HashSet};
 use std::sync::Arc;

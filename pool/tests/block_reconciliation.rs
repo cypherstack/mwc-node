@@ -20,9 +20,9 @@ use self::core::global;
 use self::keychain::{ExtKeychain, Keychain};
 use crate::common::ChainAdapter;
 use crate::common::*;
-use mwc_core as core;
-use mwc_keychain as keychain;
-use mwc_util as util;
+use grin_core as core;
+use grin_keychain as keychain;
+use grin_util as util;
 use std::sync::Arc;
 
 #[test]
