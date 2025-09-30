@@ -13,9 +13,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-use mwc_core as core;
-use mwc_store as store;
-use mwc_util as util;
+use grin_core as core;
+use grin_store as store;
+use grin_util as util;
 
 use crate::core::global;
 use crate::core::ser::{self, Readable, Reader, Writeable, Writer};

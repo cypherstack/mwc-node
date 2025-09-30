@@ -22,9 +22,9 @@ use lmdb_zero as lmdb;
 use lmdb_zero::traits::CreateCursor;
 use lmdb_zero::LmdbResultExt;
 
-use crate::mwc_core::global;
-use crate::mwc_core::ser::{self, DeserializationMode, ProtocolVersion};
-use crate::util::RwLock;
+use crate::grin_core::global;
+use crate::grin_core::ser::{self, DeserializationMode, ProtocolVersion};
+use grin_util::RwLock;
 
 /// number of bytes to grow the database by when needed
 pub const ALLOC_CHUNK_SIZE_DEFAULT: usize = 134_217_728; //128 MB

@@ -29,9 +29,9 @@ use std::{
 };
 
 use croaring::{Bitmap, Portable};
-use mwc_core::core::pmmr;
+use grin_core::core::pmmr;
 
-use crate::mwc_core::core::pmmr::{bintree_leftmost, bintree_postorder_height, family};
+use crate::grin_core::core::pmmr::{bintree_leftmost, bintree_postorder_height, family};
 use crate::{read_bitmap, save_via_temp_file};
 use std::cmp::min;
 

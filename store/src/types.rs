@@ -15,7 +15,7 @@
 //! Common storage-related types
 use tempfile::tempfile;
 
-use crate::mwc_core::ser::{
+use crate::grin_core::ser::{
 	self, BinWriter, DeserializationMode, ProtocolVersion, Readable, Reader, StreamingReader,
 	Writeable, Writer,
 };

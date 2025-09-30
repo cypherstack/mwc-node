@@ -20,9 +20,9 @@ use std::path::{Path, PathBuf};
 
 use croaring::{Bitmap, Portable};
 
-use crate::mwc_core::core::hash::Hashed;
-use crate::mwc_core::core::pmmr;
-use crate::mwc_core::core::BlockHeader;
+use crate::grin_core::core::hash::Hashed;
+use crate::grin_core::core::pmmr;
+use crate::grin_core::core::BlockHeader;
 use crate::prune_list::PruneList;
 use crate::{read_bitmap, save_via_temp_file};
 

@@ -24,8 +24,8 @@ use crate::core::ser::{
 use crate::store::pmmr::PMMRBackend;
 use chrono::Utc;
 use croaring::Bitmap;
-use mwc_core as core;
-use mwc_store as store;
+use grin_core as core;
+use grin_store as store;
 use std::fs;
 use std::io::Cursor;
 

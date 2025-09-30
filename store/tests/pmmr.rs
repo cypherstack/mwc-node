@@ -14,8 +14,8 @@
 // limitations under the License.
 
 use env_logger;
-use mwc_core as core;
-use mwc_store as store;
+use grin_core as core;
+use grin_store as store;
 
 use std::fs;
 

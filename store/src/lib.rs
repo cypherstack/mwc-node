@@ -24,8 +24,8 @@
 #[macro_use]
 extern crate log;
 #[macro_use]
-extern crate mwc_core;
-extern crate mwc_util as util;
+extern crate grin_core;
+extern crate grin_core as util;
 
 //use mwc_core as core;
 
