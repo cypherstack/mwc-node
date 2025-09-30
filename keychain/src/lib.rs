@@ -18,7 +18,7 @@
 use blake2_rfc as blake2;
 
 #[macro_use]
-extern crate mwc_util as util;
+extern crate grin_util as util;
 
 #[macro_use]
 extern crate serde_derive;
