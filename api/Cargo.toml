@@ -32,12 +32,12 @@ url = "2.1"
 bytes = "1"
 chrono = { version = "0.4.11", features = ["serde"] }
 
-mwc_core = { path = "../core", version = "5.3.9" }
-mwc_chain = { path = "../chain", version = "5.3.9" }
-mwc_p2p = { path = "../p2p", version = "5.3.9" }
-mwc_pool = { path = "../pool", version = "5.3.9" }
-mwc_store = { path = "../store", version = "5.3.9" }
-mwc_util = { path = "../util", version = "5.3.9" }
+grin_core = { path = "../core", version = "5.3.9" }
+grin_chain = { path = "../chain", version = "5.3.9" }
+grin_p2p = { path = "../p2p", version = "5.3.9" }
+grin_pool = { path = "../pool", version = "5.3.9" }
+grin_store = { path = "../store", version = "5.3.9" }
+grin_util = { path = "../util", version = "5.3.9" }
 
 # NOTE. We can't have hyper-rustls the same version for Android and non android. because if how rust builds dependency.
 # Android must have v0.20+
@@ -48,4 +48,4 @@ hyper-rustls = "0.23"
 hyper-rustls = { version = "0.23", default-features = false, features = ["webpki-tokio"] }
 
 [features]
-libp2p = ["mwc_p2p/libp2p"]
+libp2p = ["libp2p"]
