@@ -27,10 +27,10 @@ use crate::error::Error;
 use crate::store;
 use crate::txhashset;
 use crate::types::{CommitPos, Options, Tip};
-use mwc_core::consensus::HeaderDifficultyInfo;
-use mwc_core::core::Transaction;
-use mwc_util::secp::Secp256k1;
-use mwc_util::RwLock;
+use grin_core::consensus::HeaderDifficultyInfo;
+use grin_core::core::Transaction;
+use grin_util::secp::Secp256k1;
+use grin_util::RwLock;
 use std::collections::{HashSet, VecDeque};
 use std::iter::FromIterator;
 

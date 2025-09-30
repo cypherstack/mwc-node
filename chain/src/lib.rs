@@ -34,9 +34,9 @@ extern crate log;
 #[macro_use]
 extern crate lazy_static;
 
-use mwc_core as core;
-use mwc_keychain as keychain;
-use mwc_util as util;
+use grin_core as core;
+use grin_keychain as keychain;
+use grin_util as util;
 
 mod chain;
 mod error;

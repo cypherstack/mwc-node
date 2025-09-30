@@ -16,7 +16,7 @@
 
 use crate::error::Error;
 use crate::txhashset::request_lookup::RequestLookup;
-use mwc_core::core::{Segment, SegmentIdentifier, SegmentType};
+use grin_core::core::{Segment, SegmentIdentifier, SegmentType};
 use std::cmp;
 use std::collections::HashMap;
 

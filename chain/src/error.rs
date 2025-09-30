@@ -21,8 +21,8 @@ use crate::core::ser;
 use crate::keychain;
 use crate::util::secp;
 use crate::util::secp::pedersen::Commitment;
-use mwc_core::core::hash::Hash;
-use mwc_store as store;
+use grin_core::core::hash::Hash;
+use grin_store as store;
 use std::io;
 
 /// Chain error definitions

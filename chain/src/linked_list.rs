@@ -20,7 +20,7 @@ use crate::store::Batch;
 use crate::types::CommitPos;
 use crate::util::secp::pedersen::Commitment;
 use enum_primitive::FromPrimitive;
-use mwc_store as store;
+use grin_store as store;
 use std::marker::PhantomData;
 use store::{to_key, to_key_u64, Error};
 

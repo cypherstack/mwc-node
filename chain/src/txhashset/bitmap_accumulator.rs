@@ -545,7 +545,7 @@ mod tests {
 		BinReader, BinWriter, DeserializationMode, ProtocolVersion, Readable, Writeable,
 	};
 	use byteorder::ReadBytesExt;
-	use mwc_util::secp::rand::Rng;
+	use grin_util::secp::rand::Rng;
 	use rand::thread_rng;
 	use std::io::Cursor;
 

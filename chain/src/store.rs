@@ -24,9 +24,9 @@ use crate::linked_list::MultiIndex;
 use crate::types::{CommitPos, HashHeight, Tip};
 use crate::util::secp::pedersen::Commitment;
 use croaring::Bitmap;
-use mwc_core::ser;
-use mwc_store as store;
-use mwc_store::{option_to_not_found, to_key, Error};
+use grin_core::ser;
+use grin_store as store;
+use grin_store::{option_to_not_found, to_key, Error};
 use std::convert::TryInto;
 use std::sync::Arc;
 

@@ -39,12 +39,12 @@ use crate::{
 	store::Batch,
 	txhashset::{ExtensionPair, HeaderExtension},
 };
-use mwc_core::consensus::HeaderDifficultyInfo;
-use mwc_core::core::pmmr::{VecBackend, PMMR};
-use mwc_core::ser;
-use mwc_store::Error::NotFoundErr;
-use mwc_util::secp::Secp256k1;
-use mwc_util::{secp, ToHex};
+use grin_core::consensus::HeaderDifficultyInfo;
+use grin_core::core::pmmr::{VecBackend, PMMR};
+use grin_core::ser;
+use grin_store::Error::NotFoundErr;
+use grin_util::secp::Secp256k1;
+use grin_util::{secp, ToHex};
 use std::collections::{HashSet, VecDeque};
 use std::fs::{self, File};
 use std::path::{Path, PathBuf};
@@ -1364,7 +1364,7 @@ impl Chain {
 		// Let's check if mmr roots are matching the header
 		#[cfg(debug_assertions)]
 		{
-			use mwc_core::core::pmmr::ReadablePMMR;
+			use grin_core::core::pmmr::ReadablePMMR;
 
 			let txhashset = self.txhashset.read();
 
@@ -2159,7 +2159,7 @@ impl Chain {
 		&self,
 		locator: &[Hash],
 		block_header_num: u32,
-	) -> Result<Vec<mwc_core::core::BlockHeader>, crate::Error> {
+	) -> Result<Vec<grin_core::core::BlockHeader>, crate::Error> {
 		debug!("locator: {:?}", locator);
 
 		let header = match self.find_common_header(locator) {

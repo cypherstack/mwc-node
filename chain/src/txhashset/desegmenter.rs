@@ -37,8 +37,8 @@ use crate::pibd_params::PibdParams;
 use crate::txhashset::request_lookup::RequestLookup;
 use crate::txhashset::segments_cache::SegmentsCache;
 use croaring::Bitmap;
+use grin_util::secp::{constants, Secp256k1};
 use log::Level;
-use mwc_util::secp::{constants, Secp256k1};
 use tokio::runtime::Builder;
 use tokio::task;
 

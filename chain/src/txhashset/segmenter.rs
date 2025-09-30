@@ -24,8 +24,8 @@ use crate::txhashset::{BitmapAccumulator, BitmapChunk, TxHashSet};
 use crate::util::secp::pedersen::RangeProof;
 use crate::util::RwLock;
 use croaring::Bitmap;
-use mwc_core::core::pmmr::{ReadonlyPMMR, VecBackend};
-use mwc_util::secp::constants;
+use grin_core::core::pmmr::{ReadonlyPMMR, VecBackend};
+use grin_util::secp::constants;
 use std::{sync::Arc, time::Instant};
 
 /// Segmenter for generating PIBD segments.

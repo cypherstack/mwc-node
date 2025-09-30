@@ -18,7 +18,7 @@
 //! configuration parameters anywhere
 
 use chrono::{DateTime, Utc};
-use mwc_util::RwLock;
+use grin_util::RwLock;
 use std::cmp;
 use std::sync::Arc;
 use sysinfo::{MemoryRefreshKind, RefreshKind, System};
