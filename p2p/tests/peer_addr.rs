@@ -16,7 +16,7 @@
 use std::collections::HashMap;
 use std::net::{IpAddr, Ipv4Addr, SocketAddr};
 
-use mwc_p2p as p2p;
+use grin_p2p as p2p;
 
 use crate::p2p::types::PeerAddr;
 

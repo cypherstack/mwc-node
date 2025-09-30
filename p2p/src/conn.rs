@@ -22,12 +22,12 @@
 //! stream and make sure we get the right number of bytes out.
 
 use crate::codec::{Codec, BODY_IO_TIMEOUT};
+use crate::grin_core::ser::ProtocolVersion;
 use crate::msg::{write_message, Consumed, Message, Msg};
-use crate::mwc_core::ser::ProtocolVersion;
 use crate::types::Error;
 use crate::util::{RateCounter, RwLock};
 use crossbeam::channel::{RecvTimeoutError, TryRecvError};
-use mwc_chain::SyncState;
+use grin_chain::SyncState;
 use std::fs::File;
 use std::io::{self, Write};
 use std::net::{Shutdown, TcpStream};

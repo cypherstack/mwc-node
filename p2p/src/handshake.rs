@@ -14,17 +14,17 @@
 // limitations under the License.
 
 use crate::conn::Tracker;
+use crate::grin_core::core::hash::Hash;
+use crate::grin_core::pow::Difficulty;
+use crate::grin_core::ser::ProtocolVersion;
 use crate::msg::{read_message, write_message, Hand, Msg, Shake, TorAddress, Type, USER_AGENT};
-use crate::mwc_core::core::hash::Hash;
-use crate::mwc_core::pow::Difficulty;
-use crate::mwc_core::ser::ProtocolVersion;
 use crate::peer::Peer;
 use crate::types::{
 	Capabilities, Direction, Error, P2PConfig, PeerAddr, PeerAddr::Ip, PeerAddr::Onion, PeerInfo,
 	PeerLiveInfo,
 };
 use crate::util::RwLock;
-use mwc_core::global;
+use grin_core::global;
 use rand::{thread_rng, Rng};
 use std::collections::VecDeque;
 use std::net::{SocketAddr, TcpStream};

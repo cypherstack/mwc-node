@@ -14,7 +14,7 @@
 // limitations under the License.
 
 use crate::conn::MessageHandler;
-use crate::mwc_core::core::{hash::Hashed, CompactBlock};
+use crate::grin_core::core::{hash::Hashed, CompactBlock};
 use crate::{chain, Capabilities, ReasonForBan};
 
 use crate::msg::{
@@ -129,7 +129,7 @@ impl MessageHandler for Protocol {
 			}
 
 			Message::Block(b) => {
-				let b: mwc_core::core::Block = b.into();
+				let b: grin_core::core::Block = b.into();
 				debug!(
 					"handle_payload: received block {}, {}",
 					b.header.height,

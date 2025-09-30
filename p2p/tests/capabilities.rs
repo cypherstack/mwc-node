@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-use mwc_p2p::Capabilities;
+use grin_p2p::Capabilities;
 
 // We use `contains()` to filter capabilities bits.
 #[test]

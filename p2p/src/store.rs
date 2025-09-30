@@ -19,10 +19,10 @@ use chrono::Utc;
 use num::FromPrimitive;
 use rand::thread_rng;
 
-use crate::mwc_core::ser::{self, DeserializationMode, Readable, Reader, Writeable, Writer};
+use crate::grin_core::ser::{self, DeserializationMode, Readable, Reader, Writeable, Writer};
 use crate::types::{Capabilities, PeerAddr, ReasonForBan};
-use mwc_store::{self, option_to_not_found, to_key, Error};
-use mwc_util::secp::rand::Rng;
+use grin_store::{self, option_to_not_found, to_key, Error};
+use grin_util::secp::rand::Rng;
 
 const DB_NAME: &str = "peerV2";
 const STORE_SUBPATH: &str = "peers";
@@ -122,13 +122,13 @@ impl Readable for PeerData {
 
 /// Storage facility for peer data.
 pub struct PeerStore {
-	db: mwc_store::Store,
+	db: grin_store::Store,
 }
 
 impl PeerStore {
 	/// Instantiates a new peer store under the provided root path.
 	pub fn new(db_root: &str) -> Result<PeerStore, Error> {
-		let db = mwc_store::Store::new(db_root, Some(DB_NAME), Some(STORE_SUBPATH), None)?;
+		let db = grin_store::Store::new(db_root, Some(DB_NAME), Some(STORE_SUBPATH), None)?;
 		Ok(PeerStore { db: db })
 	}
 
