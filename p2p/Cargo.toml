@@ -38,13 +38,13 @@ serde_json = "1"
 bytes = "0.5"
 crossbeam = "0.8"
 
-mwc_core = { path = "../core", version = "5.3.9" }
-mwc_store = { path = "../store", version = "5.3.9" }
-mwc_util = { path = "../util", version = "5.3.9" }
-mwc_chain = { path = "../chain", version = "5.3.9" }
+grin_core = { path = "../core", version = "5.3.9" }
+grin_store = { path = "../store", version = "5.3.9" }
+grin_util = { path = "../util", version = "5.3.9" }
+grin_chain = { path = "../chain", version = "5.3.9" }
 
 [dev-dependencies]
-mwc_pool = { path = "../pool", version = "5.3.9" }
+grin_pool = { path = "../pool", version = "5.3.9" }
 
 [features]
 # libp2p disabled by default
