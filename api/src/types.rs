@@ -22,7 +22,7 @@ use crate::p2p;
 use crate::util::secp::pedersen;
 use crate::util::{self, ToHex};
 #[cfg(feature = "libp2p")]
-use mwc_p2p::libp2p_connection;
+use grin_p2p::libp2p_connection;
 use serde;
 use serde::de::MapAccess;
 use serde::ser::SerializeStruct;

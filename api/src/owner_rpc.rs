@@ -20,7 +20,7 @@ use crate::p2p::PeerData;
 use crate::rest::Error;
 use crate::types::Status;
 use easy_jsonrpc_mwc;
-use mwc_p2p::types::PeerInfoDisplayLegacy;
+use grin_p2p::types::PeerInfoDisplayLegacy;
 use std::net::SocketAddr;
 
 /// Public definition used to generate Node jsonrpc api.

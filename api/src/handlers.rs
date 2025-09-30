@@ -245,7 +245,7 @@ where
 	B: BlockChain,
 	P: PoolAdapter,
 {
-	pub peers: Weak<mwc_p2p::Peers>,
+	pub peers: Weak<grin_p2p::Peers>,
 	pub chain: Weak<Chain>,
 	pub tx_pool: Weak<RwLock<pool::TransactionPool<B, P>>>,
 	pub sync_state: Weak<SyncState>,
@@ -258,7 +258,7 @@ where
 {
 	/// Create a new foreign API handler for GET methods
 	pub fn new(
-		peers: Weak<mwc_p2p::Peers>,
+		peers: Weak<grin_p2p::Peers>,
 		chain: Weak<Chain>,
 		tx_pool: Weak<RwLock<pool::TransactionPool<B, P>>>,
 		sync_state: Weak<SyncState>,

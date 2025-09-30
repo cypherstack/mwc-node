@@ -24,8 +24,8 @@ use crate::types::*;
 use crate::util;
 use crate::util::RwLock;
 use crate::web::*;
+use grin_util::secp::{ContextFlag, Secp256k1};
 use hyper::{Body, Request, StatusCode};
-use mwc_util::secp::{ContextFlag, Secp256k1};
 use std::sync::Weak;
 
 /// Get basic information about the transaction pool.

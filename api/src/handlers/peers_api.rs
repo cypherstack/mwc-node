@@ -19,10 +19,10 @@ use crate::p2p::{self, PeerData};
 use crate::rest::*;
 use crate::router::{Handler, ResponseFuture};
 use crate::web::*;
+use grin_p2p::types::Direction;
+use grin_p2p::types::PeerInfoDisplayLegacy;
+use grin_p2p::Capabilities;
 use hyper::{Body, Request, StatusCode};
-use mwc_p2p::types::Direction;
-use mwc_p2p::types::PeerInfoDisplayLegacy;
-use mwc_p2p::Capabilities;
 use std::net::SocketAddr;
 use std::sync::Weak;
 

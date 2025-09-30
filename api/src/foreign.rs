@@ -36,8 +36,8 @@ use crate::{Libp2pMessages, Libp2pPeers};
 #[cfg(feature = "libp2p")]
 use chrono::Utc;
 #[cfg(feature = "libp2p")]
-use mwc_p2p::libp2p_connection;
-use mwc_util::secp::Secp256k1;
+use grin_p2p::libp2p_connection;
+use grin_util::secp::Secp256k1;
 use std::sync::Weak;
 
 /// Main interface into all node API functions.
@@ -52,7 +52,7 @@ where
 	B: BlockChain,
 	P: PoolAdapter,
 {
-	pub peers: Weak<mwc_p2p::Peers>,
+	pub peers: Weak<grin_p2p::Peers>,
 	pub chain: Weak<Chain>,
 	pub tx_pool: Weak<RwLock<pool::TransactionPool<B, P>>>,
 	pub sync_state: Weak<SyncState>,
@@ -77,7 +77,7 @@ where
 	///
 
 	pub fn new(
-		peers: Weak<mwc_p2p::Peers>,
+		peers: Weak<grin_p2p::Peers>,
 		chain: Weak<Chain>,
 		tx_pool: Weak<RwLock<pool::TransactionPool<B, P>>>,
 		sync_state: Weak<SyncState>,

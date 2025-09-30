@@ -23,8 +23,8 @@ use crate::handlers::server_api::StatusHandler;
 use crate::p2p::{self, PeerData};
 use crate::rest::*;
 use crate::types::Status;
-use mwc_p2p::types::PeerInfoDisplayLegacy;
-use mwc_util::Mutex;
+use grin_p2p::types::PeerInfoDisplayLegacy;
+use grin_util::Mutex;
 use std::net::SocketAddr;
 use std::sync::Weak;
 
